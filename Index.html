@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Manager</h1>
+    </header>
+    
+    <main>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Enter a new task" required>
+        <button type="submit">Add Task</button>
+      </form>
+      
+      <section id="task-list-section">
+        <h2>Tasks</h2>
+        <ul id="task-list"></ul>
+      </section>
+      
+      <div id="filters">
+        <button id="filter-all">All</button>
+        <button id="filter-completed">Completed</button>
+        <button id="filter-pending">Pending</button>
+      </div>
+    </main>
+    
+    <footer>
+      <p id="quote">Fetching inspirational quote...</p>
+    </footer>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
